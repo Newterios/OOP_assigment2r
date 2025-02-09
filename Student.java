@@ -3,9 +3,16 @@ import java.util.Objects;
 public class Student extends Person {
     private int id;
 
+    public Student() {
+    }
+
     public Student(String name, int id, String email) {
         super(name, email);
         this.id = id;
+    }
+    @Override
+    public String describe() {
+        return "I am a student. My name is " + getName() + " and my ID is " + id;
     }
 
     public int getId() {

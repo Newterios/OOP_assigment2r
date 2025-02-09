@@ -9,6 +9,9 @@ public class Course implements Comparable<Course> {
     private int maxStudents;
     private List<Student> students;
 
+    public Course() {
+    }
+
     public Course(String courseName, String courseCode, int credits, int maxStudents) {
         this.courseName = courseName;
         this.courseCode = courseCode;

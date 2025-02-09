@@ -4,9 +4,15 @@ public abstract class Person {
     private String name;
     private String email;
 
+    public Person() {
+    }
+
     public Person(String name, String email) {
         this.name = name;
         this.email = email;
+    }
+    public String describe() {
+        return "I am a person. My name is " + name;
     }
 
     public String getName() {

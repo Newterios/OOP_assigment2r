@@ -9,6 +9,9 @@ public class University {
     private List<Course> courses;
     private List<Professor> professors;
 
+    public University() {
+    }
+
     public University(String universityName, String location) {
         this.universityName = universityName;
         this.location = location;

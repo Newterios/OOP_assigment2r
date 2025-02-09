@@ -3,6 +3,9 @@ import java.util.Objects;
 public class Professor extends Person {
     private String department;
 
+    public Professor() {
+    }
+
     public Professor(String name, String department, String email) {
         super(name, email);
         this.department = department;
